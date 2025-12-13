@@ -316,6 +316,18 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1765629297284</Id>
+					<Name><![CDATA[MinPedService]]></Name>
+					<X>720</X><Y>1420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[PedService]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1762441988660</Id>
 					<Name><![CDATA[InputIntesity]]></Name>
@@ -330,7 +342,7 @@
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.8]]></Code>
+							<Code><![CDATA[2]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -356,7 +368,7 @@
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.5]]></Code>
+							<Code><![CDATA[0.1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -416,41 +428,26 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
-			</Variables>
-			<Connectors>
-				<Connector>
-					<Id>1761652519172</Id>
-					<Name><![CDATA[connector]]></Name>
-					<X>270</X><Y>960</Y>
+				<Variable Class="CollectionVariable">
+					<Id>1765629123363</Id>
+					<Name><![CDATA[pedServices]]></Name>
+					<X>720</X><Y>1380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[foodcourt]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[foodcourt]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedSource]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-160</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[PedService]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ pedService, pedService1, pedService2, pedService3, pedService4 }]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+			</Variables>
+			<Connectors>
 				<Connector>
 					<Id>1761652707078</Id>
 					<Name><![CDATA[connector1]]></Name>
@@ -912,17 +909,17 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+						<ItemName><![CDATA[delay]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
 						<ItemName><![CDATA[in]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-490</X><Y>0</Y></Point>
-						<Point><X>-490</X><Y>-210</Y></Point>
+						<Point><X>-580</X><Y>0</Y></Point>
+						<Point><X>-580</X><Y>-210</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -1095,7 +1092,129 @@
 						<Point><X>230</X><Y>280</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1765636980987</Id>
+					<Name><![CDATA[connector]]></Name>
+					<X>110</X><Y>960</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSource]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSource]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[delay]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>70</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1765636995258</Id>
+					<Name><![CDATA[connector20]]></Name>
+					<X>220</X><Y>960</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[delay]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1765625582001</Id>
+					<Name><![CDATA[SendToConsumer]]></Name>
+					<X>720</X><Y>1340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[msg]]></Name>
+						<Type><![CDATA[String]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Consumer]]></Type>
+					</Parameter>
+					<Body><![CDATA[send(msg, c);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[PedService]]></ReturnType>
+					<Id>1765629414367</Id>
+					<Name><![CDATA[getLeastLoadedService]]></Name>
+					<X>720</X><Y>1300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[services]]></Name>
+						<Type><![CDATA[ArrayList<PedService>]]></Type>
+					</Parameter>
+					<Body><![CDATA[if (services == null || services.isEmpty()) {
+        return 0;
+    }
+    
+    PedService leastLoaded = services.get(0);
+    int leastLoadedIndex = 0;
+    int minQueueSize = leastLoaded.size();
+    
+    int i = 0;
+    for (PedService service : services) {
+        if (service.size() < minQueueSize) {
+            minQueueSize = service.size();
+            leastLoaded = service;
+            leastLoadedIndex = i;
+        }
+        i++;
+    }
+    
+    return leastLoadedIndex;]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1760089599730</Id>
@@ -1292,8 +1411,8 @@
 								<Code><![CDATA[TotalArrived++;
 lambda = TotalArrived / time();
 
-Consumer c = (Consumer) ped;
-c.statechart.fireEvent("goToPOS");]]></Code>
+SendToConsumer("GoToPOS", (Consumer)ped);
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1351,20 +1470,32 @@ c.statechart.fireEvent("goToPOS");]]></Code>
 						<Parameter>
 							<Name><![CDATA[type]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+								<Code><![CDATA[self.TYPE_EXIT_NUMBER]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[MinPedService == pedService;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[MinPedService == pedService1]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[MinPedService == pedService2]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[MinPedService == pedService3]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability1]]></Name>
@@ -1383,6 +1514,9 @@ c.statechart.fireEvent("goToPOS");]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[exitNumber]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[pedServices.indexOf(getLeastLoadedService(pedServices)) + 1;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[choiceIsVolatile]]></Name>
@@ -1482,8 +1616,8 @@ c.statechart.fireEvent("goToPOS");]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer) ped;
-c.statechart.fireEvent("InQueue");
+								<Code><![CDATA[Consumer c = (Consumer)ped;
+SendToConsumer("InQueue", (Consumer)ped);
 c.pedService = pedService;]]></Code>
 							</Value>
 						</Parameter>
@@ -1496,8 +1630,7 @@ c.pedService = pedService;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer)ped;
-c.statechart.fireEvent("InService");]]></Code>
+								<Code><![CDATA[SendToConsumer("InService", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1505,7 +1638,9 @@ c.statechart.fireEvent("InService");]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[TotalServed++;
 s1++;
-mu_1 = s1 / time()]]></Code>
+mu_1 = s1 / time();
+
+SendToConsumer("GoToTable", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1591,8 +1726,8 @@ mu_1 = s1 / time()]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer) ped;
-c.statechart.fireEvent("InQueue");
+								<Code><![CDATA[Consumer c = (Consumer)ped;
+SendToConsumer("InQueue", (Consumer)ped);
 c.pedService = pedService;]]></Code>
 							</Value>
 						</Parameter>
@@ -1605,14 +1740,15 @@ c.pedService = pedService;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer)ped;
-c.statechart.fireEvent("InService");]]></Code>
+								<Code><![CDATA[SendToConsumer("InService", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TotalServed++]]></Code>
+								<Code><![CDATA[TotalServed++;
+
+SendToConsumer("GoToTable", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1698,8 +1834,8 @@ c.statechart.fireEvent("InService");]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer) ped;
-c.statechart.fireEvent("InQueue");
+								<Code><![CDATA[Consumer c = (Consumer)ped;
+SendToConsumer("InQueue", (Consumer)ped);
 c.pedService = pedService;]]></Code>
 							</Value>
 						</Parameter>
@@ -1712,14 +1848,15 @@ c.pedService = pedService;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer)ped;
-c.statechart.fireEvent("InService");]]></Code>
+								<Code><![CDATA[SendToConsumer("InService", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TotalServed++]]></Code>
+								<Code><![CDATA[TotalServed++;
+
+SendToConsumer("GoToTable", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1805,8 +1942,8 @@ c.statechart.fireEvent("InService");]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer) ped;
-c.statechart.fireEvent("InQueue");
+								<Code><![CDATA[Consumer c = (Consumer)ped;
+SendToConsumer("InQueue", (Consumer)ped);
 c.pedService = pedService;]]></Code>
 							</Value>
 						</Parameter>
@@ -1819,14 +1956,15 @@ c.pedService = pedService;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer)ped;
-c.statechart.fireEvent("InService");]]></Code>
+								<Code><![CDATA[SendToConsumer("InService", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TotalServed++]]></Code>
+								<Code><![CDATA[TotalServed++;
+
+SendToConsumer("GoToTable", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1912,8 +2050,8 @@ c.statechart.fireEvent("InService");]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer) ped;
-c.statechart.fireEvent("InQueue");
+								<Code><![CDATA[Consumer c = (Consumer)ped;
+SendToConsumer("InQueue", (Consumer)ped);
 c.pedService = pedService;]]></Code>
 							</Value>
 						</Parameter>
@@ -1926,14 +2064,15 @@ c.pedService = pedService;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Consumer c = (Consumer)ped;
-c.statechart.fireEvent("InService");]]></Code>
+								<Code><![CDATA[SendToConsumer("InService", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TotalServed++]]></Code>
+								<Code><![CDATA[TotalServed++;
+
+SendToConsumer("GoToTable", (Consumer)ped);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2045,6 +2184,9 @@ c.statechart.fireEvent("InService");]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onBeginWait]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[SendToConsumer("Eating", (Consumer)ped);]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
@@ -2136,6 +2278,9 @@ c.statechart.fireEvent("InService");]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[SendToConsumer("Leaving", (Consumer)ped);]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -2194,6 +2339,10 @@ c.statechart.fireEvent("InService");]]></Code>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[SendToConsumer("Final", (Consumer)ped);
+]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2229,6 +2378,7 @@ c.statechart.fireEvent("InService");]]></Code>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<PresentationId>1765632198660</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
 						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
@@ -2243,12 +2393,21 @@ c.statechart.fireEvent("InService");]]></Code>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[type]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[((Consumer)ped).statechart.getState().toString() == "GoToPOS"]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[((Consumer)ped).statechart.getState().toString() == "EndOfPatience"]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition3]]></Name>
@@ -2258,18 +2417,33 @@ c.statechart.fireEvent("InService");]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[1]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0	]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability5]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[exitNumber]]></Name>
@@ -2279,6 +2453,9 @@ c.statechart.fireEvent("InService");]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[traceln(((Consumer)ped).statechart.getState().toString());]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit1]]></Name>
@@ -2314,6 +2491,95 @@ c.statechart.fireEvent("InService");]]></Code>
 					<InitializationType>SPECIFIED_NUMBER</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<Id>1762692982091</Id>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1765636954902</Id>
+					<Name><![CDATA[delay]]></Name>
+					<X>180</X><Y>940</Y>
+					<Label><X>-5</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[1]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<Id>1765636954900</Id>
 						<TableReference>
 						</TableReference>
 					</InitializationDatabaseTableQuery>
@@ -2483,6 +2749,9 @@ c.statechart.fireEvent("InService");]]></Code>
 						<Point><X>0</X><Y>-14</Y></Point>
 						<Point><X>0</X><Y>11</Y></Point>
 						<Point><X>0</X><Y>-39</Y></Point>
+						<Point><X>0</X><Y>-20</Y></Point>
+						<Point><X>0</X><Y>5</Y></Point>
+						<Point><X>0</X><Y>-45</Y></Point>
 						<Point><X>0</X><Y>-60</Y></Point>
 						<Point><X>0</X><Y>-35</Y></Point>
 						<Point><X>0</X><Y>0</Y></Point>
@@ -3760,6 +4029,24 @@ c.statechart.fireEvent("InService");]]></Code>
 					<Latitude>0.0</Latitude>
 					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
+				<EmbeddedObjectPresentation>
+					<Id>1765632198660</Id>
+					<Name><![CDATA[pedSelectOutput1_presentation]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
+				</EmbeddedObjectPresentation>
 			</Presentation>
 
 				</Level>
@@ -3795,9 +4082,6 @@ c.statechart.fireEvent("InService");]]></Code>
 					<Code><![CDATA[10]]></Code>
 					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 				</VelocityCode>
-				<OnExitFlowchartBlock><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
-traceln(String.valueOf(this.IsInQueue));
-traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 				<PhysicalLength Class="CodeUnitValue">
 					<Code><![CDATA[1]]></Code>
 					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
@@ -3922,56 +4206,6 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1765549257688</Id>
-					<Name><![CDATA[PatienceTime]]></Name>
-					<X>560</X><Y>140</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[]]></Type>
-						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[exponential(1 \ main.AvgWaitingTime)]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1765549257686</Id>
-							<EditorContolType>UNIT_EDITOR</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1765551791828</Id>
-					<Name><![CDATA[AttemptsNumber]]></Name>
-					<X>560</X><Y>110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[(int)uniform(0, main.M)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1765551791826</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1765553027664</Id>
 					<Name><![CDATA[main]]></Name>
 					<X>560</X><Y>30</Y>
@@ -3996,6 +4230,54 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1765566468270</Id>
+					<Name><![CDATA[PatienceTime]]></Name>
+					<X>560</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[exponential((1 / main.AvgWaitingTime))]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1765566468268</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1765566583616</Id>
+					<Name><![CDATA[AttemptsNumber]]></Name>
+					<X>560</X><Y>110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[(int)uniform(0, main.M)]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1765566583614</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -4007,6 +4289,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4019,6 +4303,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4031,7 +4316,9 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[QueueTimeStart = time();]]></EntryAction>
+						<EntryAction><![CDATA[QueueTimeStart = time();
+traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4044,6 +4331,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4056,6 +4345,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4068,6 +4359,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4080,6 +4373,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4092,6 +4387,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
+						<Action><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
@@ -4103,6 +4400,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
+						<Action><![CDATA[pedService.cancel(this);]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -4114,6 +4412,8 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="120" Height="30">
+						<EntryAction><![CDATA[traceln("Agent " + this + " is currently in state: " + statechart.getState());
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4158,7 +4458,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[equalsTo]]></FilterType>
-						<EqualsExpression><![CDATA["goToPOS"]]></EqualsExpression>
+						<EqualsExpression><![CDATA["GoToPOS"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -4175,7 +4475,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						<Point><X>0</X><Y>52</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1765359788539" Target="1765370446037" Trigger="condition">
+					<Properties Source="1765359788539" Target="1765370446037" Trigger="message">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -4185,10 +4485,10 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
+						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["Final"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -4295,7 +4595,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1765359762109" Target="1765359780309" Trigger="timeout">
+					<Properties Source="1765359762109" Target="1765359780309" Trigger="message">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -4305,10 +4605,10 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
+						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["Eating"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -4325,7 +4625,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1765359780309" Target="1765359788539" Trigger="timeout">
+					<Properties Source="1765359780309" Target="1765359788539" Trigger="message">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -4335,10 +4635,10 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
+						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["Leaving"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -4387,6 +4687,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1765559442790" Target="1765359533312" Trigger="timeout">
+						<Action><![CDATA[CurrentAttempt++;]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -4447,7 +4748,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 						<Point><X>-100</X><Y>230</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1765564081601" Target="1765359788539" Trigger="timeout">
+					<Properties Source="1765564081601" Target="1765359788539" Trigger="message">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[0]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -4457,10 +4758,10 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
+						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["Leaving"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -4477,7 +4778,7 @@ traceln(String.valueOf(AttemptsNumber));]]></OnExitFlowchartBlock>
 					<HandleReceiveInConnections>false</HandleReceiveInConnections>
 					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
 					<AgentLinkBidirectional>true</AgentLinkBidirectional>
-					<MessageType><![CDATA[Object]]></MessageType>
+					<MessageType><![CDATA[String]]></MessageType>
 					<StatechartReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
 						<ClassName><![CDATA[Consumer]]></ClassName>
