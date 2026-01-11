@@ -14163,7 +14163,7 @@ MaxSpeed = 0.3;]]></StartupCode>
 
 			<Presentation>
 				<Figure3D>
-					<Id>1768037200181</Id>
+					<Id>1768123654707</Id>
 					<Name><![CDATA[object3d]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -14175,7 +14175,7 @@ MaxSpeed = 0.3;]]></StartupCode>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
-						<ClassName><![CDATA[3d/untitled.fbx]]></ClassName>
+						<ClassName><![CDATA[an-elderly-man/source/an elderly man/untitled.fbx]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
 						<ColorMapping>
@@ -14183,12 +14183,7 @@ MaxSpeed = 0.3;]]></StartupCode>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
-							<Name><![CDATA[Wolf3D_Skin]]></Name>
-							<OriginalColor>13421772</OriginalColor>
-							<Color>-332841</Color>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Wolf3D_Teeth]]></Name>
+							<Name><![CDATA[Wolf3D_Body]]></Name>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
@@ -14196,15 +14191,7 @@ MaxSpeed = 0.3;]]></StartupCode>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
-							<Name><![CDATA[Wolf3D_Glasses]]></Name>
-							<OriginalColor>13421772</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
 							<Name><![CDATA[Wolf3D_Outfit_Footwear]]></Name>
-							<OriginalColor>13421772</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Wolf3D_Eye]]></Name>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
@@ -14212,11 +14199,23 @@ MaxSpeed = 0.3;]]></StartupCode>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
+							<Name><![CDATA[Wolf3D_Skin]]></Name>
+							<OriginalColor>13421772</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Wolf3D_Teeth]]></Name>
+							<OriginalColor>13421772</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
 							<Name><![CDATA[Wolf3D_Outfit_Bottom]]></Name>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 						<ColorMapping>
-							<Name><![CDATA[Wolf3D_Body]]></Name>
+							<Name><![CDATA[Wolf3D_Glasses]]></Name>
+							<OriginalColor>13421772</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Wolf3D_Eye]]></Name>
 							<OriginalColor>13421772</OriginalColor>
 						</ColorMapping>
 					</ColorTable>
@@ -14225,9 +14224,8 @@ MaxSpeed = 0.3;]]></StartupCode>
 					<Rotation>270.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
-					<InternalLighting>GLOBAL</InternalLighting>
+					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
-					<VisibleCode><![CDATA[appearanceType == 4;]]></VisibleCode>
 </Figure3D>
 			</Presentation>
 
@@ -17813,102 +17811,6 @@ if (bestInfeasibleObjective != Double.POSITIVE_INFINITY) {
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
-			<Id>1768036671312</Id>
-			<Path><![CDATA[3d/untitled.fbx]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671313</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\glasses-02-D.png]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671314</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\baseColor.001.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671315</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\hair-10-N.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671316</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\Wolf3D_Male_Athletic_nm.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671317</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-bottom-D.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671318</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\baseColor.002.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671319</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\baseColor.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671320</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\beard-04-N.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671321</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-top-D.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671322</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-footwear-D.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671323</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-top-N.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671324</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-bottom-N.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671325</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\Wolf3D_Teeth.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671326</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\outfit-classic-04-v2-m-footwear-N.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Id>1768036671327</Id>
-			<Path><![CDATA[3d/C:\Users\ALEXANDR.HOME-PC\Desktop\untitled.fbm\baseColor.003.jpg]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
 			<Id>1768039235179</Id>
 			<Path><![CDATA[3d/boy.dae]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
@@ -17917,6 +17819,102 @@ if (bestInfeasibleObjective != Double.POSITIVE_INFINITY) {
 		<Resource>
 			<Id>1768039239994</Id>
 			<Path><![CDATA[3d/girl.dae]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628636</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbx]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628637</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/baseColor.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628638</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/glasses-02-D.png]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628639</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/Wolf3D_Male_Athletic_nm.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628640</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-top-N.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628641</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/baseColor.003.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628642</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/baseColor.001.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628643</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-footwear-D.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628644</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-bottom-D.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628645</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/hair-10-N.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628646</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/beard-04-N.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628647</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-top-D.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628648</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-footwear-N.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628649</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/baseColor.002.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628650</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/outfit-classic-04-v2-m-bottom-N.jpg]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Id>1768123628651</Id>
+			<Path><![CDATA[an-elderly-man/source/an elderly man/untitled.fbm/Wolf3D_Teeth.jpg]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
