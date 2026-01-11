@@ -15687,7 +15687,10 @@ main.ReturningAvgTime = main.ReturningTimeStat.mean();]]></ExitAction>
 					<Name><![CDATA[MaxSpeed]]></Name>
 				</Parameter>
 			</Parameters>
-			<StartupCode><![CDATA[appearanceType = (int)uniform(5, 7);]]></StartupCode>
+			<StartupCode><![CDATA[appearanceType = (int)uniform(5, 7);
+EatingTime = uniform(10, 15);
+PatienceTime = exponential((1 / (main.AvgWaitingTime - 5)));
+]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1768039211243</Id>
@@ -17684,7 +17687,7 @@ copyToClipboard( s );]]></ActionCode>
 					<Code><![CDATA[2]]></Code>
 				</Max>
 			</Parameter>
-			<ObjectiveFunctionCode><![CDATA[abs(root.AvgPosTime - root.AvgWaitingTime)]]></ObjectiveFunctionCode>
+			<ObjectiveFunctionCode><![CDATA[abs(root.InQueueAvgTime - root.AvgWaitingTime)]]></ObjectiveFunctionCode>
 			<Objective>MINIMIZE</Objective>  
 			<OptimizationEngine>NATIVE</OptimizationEngine>
 			<AfterIterationCode><![CDATA[if (isBestSolutionFeasible()) {
