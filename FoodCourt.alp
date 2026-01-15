@@ -926,7 +926,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.5]]></Code>
+							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -5583,14 +5583,14 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 						<Parameter>
 							<Name><![CDATA[comfortableSpeed]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[uniform(0.5, 1)]]></Code>
+								<Code><![CDATA[uniform(ped.MinSpeed, ped.MaxSpeed)]]></Code>
 								<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[initialSpeed]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[uniform(0.3, 0.7)]]></Code>
+								<Code><![CDATA[uniform(ped.MinSpeed, ped.MaxSpeed)]]></Code>
 								<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
 							</Value>
 						</Parameter>
@@ -8415,7 +8415,7 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Control Type="Window3D">
 					<Id>1765812907296</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>40</X><Y>2270</Y>
+					<X>50</X><Y>2320</Y>
 					<Width>1320</Width>
 					<Height>880</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -8429,7 +8429,7 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Camera3D>
 					<Id>1765812934343</Id>
 					<Name><![CDATA[camera]]></Name>
-					<X>204.444</X><Y>418.081</Y><Z>350</Z>
+					<X>204.444</X><Y>418.081</Y><Z>500</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
 					<RotationX>45.0</RotationX>
@@ -9529,14 +9529,14 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 						<SlopeType>angle</SlopeType>	
 					</Slope>
 
-					<Width>180.506</Width>
-					<Height>100</Height>
+					<Width>210</Width>
+					<Height>98</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleNode>
 				<Wall>
 					<Id>1767777241828</Id>
 					<Name><![CDATA[wall3]]></Name>
-					<X>600</X><Y>760</Y>
+					<X>620</X><Y>760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9547,18 +9547,21 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 					<LineWidth>2</LineWidth>
 					<LineMaterial>null</LineMaterial>
 					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
+					<ZHeight>48</ZHeight>
 					<Closed>false</Closed>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>20.569</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>-25</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>-140</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>-115</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>-140</X><Y>25</Y><Z>0</Z></Point>
-						<Point><X>-140</X><Y>100</Y><Z>0</Z></Point>
-						<Point><X>-140</X><Y>75</Y><Z>0</Z></Point>
-						<Point><X>-140</X><Y>100</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-135</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>17</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>-8</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>42</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>100</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>75</Y><Z>0</Z></Point>
+						<Point><X>-160</X><Y>100</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
 				<Rectangle>
@@ -10574,13 +10577,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957283307</Id>
 					<Name><![CDATA[atm]]></Name>
-					<X>15.214</X><Y>250.396</Y>
+					<X>20</X><Y>615.153</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>250.396</Y><Z>0</Z>
+					<X>20</X><Y>615.153</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -10615,13 +10618,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957292870</Id>
 					<Name><![CDATA[atm1]]></Name>
-					<X>15.214</X><Y>225.243</Y>
+					<X>20</X><Y>590</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>225.243</Y><Z>0</Z>
+					<X>20</X><Y>590</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -10656,13 +10659,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957298938</Id>
 					<Name><![CDATA[atm2]]></Name>
-					<X>15.214</X><Y>200.091</Y>
+					<X>20</X><Y>564.848</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>200.091</Y><Z>0</Z>
+					<X>20</X><Y>564.848</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -10697,13 +10700,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957310239</Id>
 					<Name><![CDATA[vending_machine]]></Name>
-					<X>15.214</X><Y>158.169</Y>
+					<X>11.214</X><Y>247.169</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>158.169</Y><Z>0</Z>
+					<X>11.214</X><Y>247.169</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -10750,13 +10753,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957329011</Id>
 					<Name><![CDATA[vending_machine1]]></Name>
-					<X>15.214</X><Y>133.017</Y>
+					<X>11.214</X><Y>222.017</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>133.017</Y><Z>0</Z>
+					<X>11.214</X><Y>222.017</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -10803,13 +10806,13 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<Figure3D>
 					<Id>1767957334731</Id>
 					<Name><![CDATA[vending_machine2]]></Name>
-					<X>15.214</X><Y>107.864</Y>
+					<X>11.214</X><Y>196.864</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>15.214</X><Y>107.864</Y><Z>0</Z>
+					<X>11.214</X><Y>196.864</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
@@ -12922,6 +12925,89 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
+				<Figure3D>
+					<Id>1768412365598</Id>
+					<Name><![CDATA[couch_3]]></Name>
+					<X>560</X><Y>780</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>560</X><Y>780</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[3d/couch_1.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_material_0]]></Name>
+							<OriginalColor>-17074</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-8608837</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>90.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Wall>
+					<Id>1768412623740</Id>
+					<Name><![CDATA[wall4]]></Name>
+					<X>465.00032051598123</X><Y>859.4075770964844</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>15</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-0.014</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>0.592</Y><Z>0</Z></Point>
+						<Point><X>0.013</X><Y>-24.408</Y><Z>0</Z></Point>
+						<Point><X>70</X><Y>0</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
+				<Wall>
+					<Id>1768412630576</Id>
+					<Name><![CDATA[wall5]]></Name>
+					<X>465.00032051598123</X><Y>859.4075770964844</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>15</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-0.014</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>0.592</Y><Z>0</Z></Point>
+						<Point><X>0.013</X><Y>-24.408</Y><Z>0</Z></Point>
+						<Point><X>70</X><Y>0</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
 			</Presentation>
 
 				</Level>
@@ -14535,8 +14621,8 @@ return list.get(randomIndex);]]></Body>
 PatienceTime = exponential((1 / (main.AvgWaitingTime + 5)));
 appearanceType = 4;
 
-MinSpeed = 0.1;
-MaxSpeed = 0.3;]]></StartupCode>
+MinSpeed = 2;
+MaxSpeed = 3;]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1766142152784</Id>
@@ -15583,6 +15669,54 @@ MaxSpeed = 0.3;]]></StartupCode>
 						<SdArray>false</SdArray>
 						<ParameterEditor>
 							<Id>1767946743290</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1768463063348</Id>
+					<Name><![CDATA[MaxSpeed]]></Name>
+					<X>580</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[6]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1768463063346</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1768463084082</Id>
+					<Name><![CDATA[MinSpeed]]></Name>
+					<X>580</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[4]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1768463084080</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
