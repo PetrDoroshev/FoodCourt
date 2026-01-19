@@ -926,7 +926,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[2]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -952,7 +952,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.08]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1052,7 +1052,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.08]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1078,7 +1078,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.1]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1104,7 +1104,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.1]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1130,7 +1130,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.1]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1156,7 +1156,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.1]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1182,7 +1182,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[0.1]]></Code>
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -1250,7 +1250,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1761652707078</Id>
 					<Name><![CDATA[connector1]]></Name>
-					<X>480</X><Y>1060</Y>
+					<X>580</X><Y>1060</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1284,7 +1284,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1761652714332</Id>
 					<Name><![CDATA[connector2]]></Name>
-					<X>480</X><Y>1130</Y>
+					<X>580</X><Y>1130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1318,7 +1318,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1761652746795</Id>
 					<Name><![CDATA[connector3]]></Name>
-					<X>480</X><Y>1190</Y>
+					<X>580</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1352,7 +1352,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1761652786858</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>480</X><Y>1250</Y>
+					<X>580</X><Y>1250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1386,7 +1386,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762428995041</Id>
 					<Name><![CDATA[connector6]]></Name>
-					<X>820</X><Y>1190</Y>
+					<X>920</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1419,7 +1419,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762429781065</Id>
 					<Name><![CDATA[connector7]]></Name>
-					<X>520</X><Y>1060</Y>
+					<X>620</X><Y>1060</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1453,7 +1453,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762429787285</Id>
 					<Name><![CDATA[connector8]]></Name>
-					<X>520</X><Y>1130</Y>
+					<X>620</X><Y>1130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1488,7 +1488,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762429799144</Id>
 					<Name><![CDATA[connector9]]></Name>
-					<X>520</X><Y>1190</Y>
+					<X>620</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1521,7 +1521,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762429804080</Id>
 					<Name><![CDATA[connector10]]></Name>
-					<X>520</X><Y>1250</Y>
+					<X>620</X><Y>1250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1555,7 +1555,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762429809171</Id>
 					<Name><![CDATA[connector11]]></Name>
-					<X>520</X><Y>1310</Y>
+					<X>620</X><Y>1310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1589,7 +1589,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762692983273</Id>
 					<Name><![CDATA[connector13]]></Name>
-					<X>740</X><Y>1350</Y>
+					<X>840</X><Y>1350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1623,7 +1623,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693025967</Id>
 					<Name><![CDATA[connector14]]></Name>
-					<X>760</X><Y>1350</Y>
+					<X>860</X><Y>1350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1657,7 +1657,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693098625</Id>
 					<Name><![CDATA[connector15]]></Name>
-					<X>760</X><Y>1370</Y>
+					<X>860</X><Y>1370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1691,7 +1691,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693781954</Id>
 					<Name><![CDATA[connector16]]></Name>
-					<X>510</X><Y>1260</Y>
+					<X>610</X><Y>1260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1725,7 +1725,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693795399</Id>
 					<Name><![CDATA[connector17]]></Name>
-					<X>510</X><Y>1200</Y>
+					<X>610</X><Y>1200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1759,7 +1759,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693802551</Id>
 					<Name><![CDATA[connector18]]></Name>
-					<X>510</X><Y>1140</Y>
+					<X>610</X><Y>1140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1793,7 +1793,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762693826489</Id>
 					<Name><![CDATA[connector19]]></Name>
-					<X>510</X><Y>1070</Y>
+					<X>610</X><Y>1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1827,7 +1827,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1765636995258</Id>
 					<Name><![CDATA[connector20]]></Name>
-					<X>200</X><Y>1140</Y>
+					<X>300</X><Y>1140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1860,7 +1860,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766000576561</Id>
 					<Name><![CDATA[connector5]]></Name>
-					<X>290</X><Y>1400</Y>
+					<X>390</X><Y>1400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1893,7 +1893,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766000620574</Id>
 					<Name><![CDATA[connector21]]></Name>
-					<X>310</X><Y>1400</Y>
+					<X>410</X><Y>1400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1927,7 +1927,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766000672555</Id>
 					<Name><![CDATA[connector22]]></Name>
-					<X>310</X><Y>1420</Y>
+					<X>410</X><Y>1420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1961,7 +1961,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766000682433</Id>
 					<Name><![CDATA[connector23]]></Name>
-					<X>510</X><Y>1400</Y>
+					<X>610</X><Y>1400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1995,7 +1995,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766000693475</Id>
 					<Name><![CDATA[connector24]]></Name>
-					<X>520</X><Y>1390</Y>
+					<X>620</X><Y>1390</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2029,7 +2029,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766002225843</Id>
 					<Name><![CDATA[connector25]]></Name>
-					<X>310</X><Y>1440</Y>
+					<X>410</X><Y>1440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2064,7 +2064,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766002236631</Id>
 					<Name><![CDATA[connector26]]></Name>
-					<X>510</X><Y>1470</Y>
+					<X>610</X><Y>1470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2098,7 +2098,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766002244061</Id>
 					<Name><![CDATA[connector27]]></Name>
-					<X>520</X><Y>1460</Y>
+					<X>620</X><Y>1460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2132,7 +2132,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1762430436966</Id>
 					<Name><![CDATA[connector12]]></Name>
-					<X>0</X><Y>180</Y>
+					<X>100</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2165,7 +2165,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766237444179</Id>
 					<Name><![CDATA[connector28]]></Name>
-					<X>600</X><Y>1210</Y>
+					<X>700</X><Y>1210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2199,7 +2199,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1766237574730</Id>
 					<Name><![CDATA[connector29]]></Name>
-					<X>600</X><Y>1190</Y>
+					<X>700</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2232,7 +2232,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1765636980987</Id>
 					<Name><![CDATA[connector]]></Name>
-					<X>60</X><Y>1080</Y>
+					<X>60</X><Y>1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2250,22 +2250,22 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[delay]]></ItemName>
+						<ItemName><![CDATA[asmChoice]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
 						<ItemName><![CDATA[in]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>100</X><Y>60</Y></Point>
+						<Point><X>40</X><Y>50</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1767775817868</Id>
 					<Name><![CDATA[connector30]]></Name>
-					<X>1180</X><Y>1190</Y>
+					<X>1300</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2298,7 +2298,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1767775824325</Id>
 					<Name><![CDATA[connector31]]></Name>
-					<X>1280</X><Y>1190</Y>
+					<X>1400</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2331,7 +2331,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1767777284440</Id>
 					<Name><![CDATA[connector32]]></Name>
-					<X>0</X><Y>0</Y>
+					<X>120</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2364,7 +2364,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1767777300565</Id>
 					<Name><![CDATA[connector33]]></Name>
-					<X>0</X><Y>0</Y>
+					<X>120</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2397,7 +2397,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1767777326013</Id>
 					<Name><![CDATA[connector34]]></Name>
-					<X>1480</X><Y>1190</Y>
+					<X>1600</X><Y>1190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2432,7 +2432,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 				<Connector>
 					<Id>1767982478516</Id>
 					<Name><![CDATA[connector35]]></Name>
-					<X>60</X><Y>1140</Y>
+					<X>60</X><Y>1120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2450,22 +2450,22 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[delay]]></ItemName>
+						<ItemName><![CDATA[asmChoice]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
 						<ItemName><![CDATA[in]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>100</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1768039435074</Id>
 					<Name><![CDATA[connector36]]></Name>
-					<X>60</X><Y>1200</Y>
+					<X>60</X><Y>1170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2483,6 +2483,39 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[foodcourt]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[asmChoice]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>-50</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1768489068904</Id>
+					<Name><![CDATA[connector37]]></Name>
+					<X>120</X><Y>1140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[asmChoice]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out2]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -2492,7 +2525,107 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>100</X><Y>-60</Y></Point>
+						<Point><X>140</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1768489111067</Id>
+					<Name><![CDATA[connector38]]></Name>
+					<X>120</X><Y>1120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[asmChoice]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out1]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoTo3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>-120</Y></Point>
+						<Point><X>10</X><Y>-120</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1768489145661</Id>
+					<Name><![CDATA[connector39]]></Name>
+					<X>220</X><Y>1000</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[asm]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGroupAssemble]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoTo3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-50</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1768489176769</Id>
+					<Name><![CDATA[connector40]]></Name>
+					<X>260</X><Y>1000</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[asm]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGroupAssemble]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[foodcourt]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[delay]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>140</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -2528,7 +2661,9 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
 					<Action><![CDATA[RequestsStat.add(ArrivedTotalCount - pedSink.countPeds());
-AvgInSystem = RequestsStat.mean();]]></Action>
+AvgInSystem = RequestsStat.mean();
+
+node.recalculateAccessibility();]]></Action>
 				</Event>
 				<Event>
 					<Id>1765655677462</Id>
@@ -2739,6 +2874,32 @@ if (sum == 0) {
 
 return false;]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1768662624362</Id>
+					<Name><![CDATA[IsGroupServed]]></Name>
+					<X>-400</X><Y>1450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[group]]></Name>
+						<Type><![CDATA[PedGroup]]></Type>
+					</Parameter>
+					<Body><![CDATA[for (Agent agent: group.getPeds()) {
+	
+	Consumer c = (Consumer)agent;
+	String state = c.statechart.getState().toString();
+	
+	if (state == "InQueue" || state == "InService") {
+		return false;
+	}	
+}
+
+return true;]]></Body>
+				</Function>
 			</Functions>
 			<AnalysisData>
     			<Statistics>
@@ -2936,7 +3097,7 @@ return false;]]></Body>
 				<EmbeddedObject>
 					<Id>1761652500058</Id>
 					<Name><![CDATA[NormalSource]]></Name>
-					<X>30</X><Y>1080</Y>
+					<X>30</X><Y>1070</Y>
 					<Label><X>-25</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3166,7 +3327,7 @@ traceln("NormalConsumer: patience time = " + ped.PatienceTime);
 				<EmbeddedObject>
 					<Id>1761652510693</Id>
 					<Name><![CDATA[pedSelectOutput]]></Name>
-					<X>260</X><Y>1140</Y>
+					<X>360</X><Y>1140</Y>
 					<Label><X>-45</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3284,7 +3445,7 @@ traceln("NormalConsumer: patience time = " + ped.PatienceTime);
 				<EmbeddedObject>
 					<Id>1761652704504</Id>
 					<Name><![CDATA[pedService]]></Name>
-					<X>480</X><Y>1050</Y>
+					<X>580</X><Y>1050</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3442,7 +3603,7 @@ posStatisticsMap.get(self.getId()).RefusedNumber++;]]></Code>
 				<EmbeddedObject>
 					<Id>1761652711674</Id>
 					<Name><![CDATA[pedService1]]></Name>
-					<X>480</X><Y>1120</Y>
+					<X>580</X><Y>1120</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3595,7 +3756,7 @@ posStatisticsMap.get(self.getId()).RefusedNumber++;]]></Code>
 				<EmbeddedObject>
 					<Id>1761652743976</Id>
 					<Name><![CDATA[pedService2]]></Name>
-					<X>480</X><Y>1180</Y>
+					<X>580</X><Y>1180</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3751,7 +3912,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1761652755869</Id>
 					<Name><![CDATA[pedService3]]></Name>
-					<X>480</X><Y>1240</Y>
+					<X>580</X><Y>1240</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3905,7 +4066,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1761652813151</Id>
 					<Name><![CDATA[pedService4]]></Name>
-					<X>480</X><Y>1300</Y>
+					<X>580</X><Y>1300</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4059,7 +4220,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1761652842657</Id>
 					<Name><![CDATA[pedWait]]></Name>
-					<X>670</X><Y>1180</Y>
+					<X>770</X><Y>1180</Y>
 					<Label><X>-15</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4193,7 +4354,7 @@ ped.attractor = self.attractor(node, ped);
 				<EmbeddedObject>
 					<Id>1762430381413</Id>
 					<Name><![CDATA[pedGoTo]]></Name>
-					<X>820</X><Y>1180</Y>
+					<X>920</X><Y>1180</Y>
 					<Label><X>-20</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4293,7 +4454,7 @@ EatingAvgTime = avg(EatingTotalTime, EatingTotalCount);
 				<EmbeddedObject>
 					<Id>1762430434054</Id>
 					<Name><![CDATA[pedSink]]></Name>
-					<X>930</X><Y>1190</Y>
+					<X>1030</X><Y>1190</Y>
 					<Label><X>-25</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4363,7 +4524,7 @@ AvgInSystemTime = InSystemTimeStat.mean();]]></Code>
 				<EmbeddedObject>
 					<Id>1762692982093</Id>
 					<Name><![CDATA[pedSelectOutput1]]></Name>
-					<X>730</X><Y>1350</Y>
+					<X>830</X><Y>1350</Y>
 					<Label><X>-45</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4496,7 +4657,7 @@ RefuseRate = TotalRefused / time();]]></Code>
 				<EmbeddedObject>
 					<Id>1765636954902</Id>
 					<Name><![CDATA[delay]]></Name>
-					<X>160</X><Y>1120</Y>
+					<X>260</X><Y>1120</Y>
 					<Label><X>-5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4588,7 +4749,7 @@ RefuseRate = TotalRefused / time();]]></Code>
 				<EmbeddedObject>
 					<Id>1766000537872</Id>
 					<Name><![CDATA[pedSelectOutput2]]></Name>
-					<X>280</X><Y>1400</Y>
+					<X>380</X><Y>1400</Y>
 					<Label><X>-45</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4706,7 +4867,7 @@ RefuseRate = TotalRefused / time();]]></Code>
 				<EmbeddedObject>
 					<Id>1766000637381</Id>
 					<Name><![CDATA[pedService5]]></Name>
-					<X>480</X><Y>1380</Y>
+					<X>580</X><Y>1380</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4860,7 +5021,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1766002196783</Id>
 					<Name><![CDATA[pedService6]]></Name>
-					<X>480</X><Y>1450</Y>
+					<X>580</X><Y>1450</Y>
 					<Label><X>-25</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5014,7 +5175,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1766237423630</Id>
 					<Name><![CDATA[select]]></Name>
-					<X>570</X><Y>1190</Y>
+					<X>670</X><Y>1190</Y>
 					<Label><X>-5</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5459,7 +5620,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767775718868</Id>
 					<Name><![CDATA[CleanerSource]]></Name>
-					<X>1080</X><Y>1190</Y>
+					<X>1200</X><Y>1190</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5659,7 +5820,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767775815310</Id>
 					<Name><![CDATA[pedGoTo1]]></Name>
-					<X>1180</X><Y>1180</Y>
+					<X>1300</X><Y>1180</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5750,7 +5911,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767775820707</Id>
 					<Name><![CDATA[pedWait1]]></Name>
-					<X>1280</X><Y>1180</Y>
+					<X>1400</X><Y>1180</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5865,7 +6026,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767777282698</Id>
 					<Name><![CDATA[pedGoTo2]]></Name>
-					<X>1360</X><Y>1180</Y>
+					<X>1480</X><Y>1180</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5956,7 +6117,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767777298976</Id>
 					<Name><![CDATA[pedWait2]]></Name>
-					<X>1440</X><Y>1180</Y>
+					<X>1560</X><Y>1180</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6081,7 +6242,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 				<EmbeddedObject>
 					<Id>1767982476064</Id>
 					<Name><![CDATA[ElderlySource]]></Name>
-					<X>30</X><Y>1140</Y>
+					<X>30</X><Y>1120</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6288,7 +6449,7 @@ traceln("ElderlyConsumer: patience time = " + ped.PatienceTime);]]></Code>
 				<EmbeddedObject>
 					<Id>1768039433364</Id>
 					<Name><![CDATA[ChildSource]]></Name>
-					<X>30</X><Y>1200</Y>
+					<X>30</X><Y>1170</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6494,6 +6655,309 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1768489000708</Id>
+					<Name><![CDATA[asmChoice]]></Name>
+					<X>90</X><Y>1120</Y>
+					<Label><X>5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412464601215]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition3]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition4]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0.8]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0		]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability5]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[0]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[exitNumber]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[choiceIsVolatile]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit3]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit4]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit5]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<Id>1768489000706</Id>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1768489091871</Id>
+					<Name><![CDATA[pedGoTo3]]></Name>
+					<X>130</X><Y>990</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedGoTo]]></ClassName>
+							<ItemName><![CDATA[1412464601103]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.LOCATION_NODE]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLine]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[asmZone]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[route]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[walkInReverseDirection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reachTolerance]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<Id>1768489091869</Id>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1768489137155</Id>
+					<Name><![CDATA[asm]]></Name>
+					<X>220</X><Y>990</Y>
+					<Label><X>5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGroupAssemble]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedGroupAssemble]]></ClassName>
+							<ItemName><![CDATA[1412464601200]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[asmZone]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[assemblingMode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[groupingMode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[groupingTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[groupingTimeGap]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[groupSize]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[matchingCondition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[isAssemblyFinished]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[groupFormation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[serviceGroupBehavior]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onBeginGrouping]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEndGrouping]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.group = group;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<Id>1768489137153</Id>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Presentation>
@@ -6536,7 +7000,7 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 				<TargetLine>
 					<Id>1762428689061</Id>
 					<Name><![CDATA[targetLine]]></Name>
-					<X>-1.241</X><Y>292.317</Y>
+					<X>-200</X><Y>300</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7843,14 +8307,20 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[accessRestrictionType]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[AREA_ACCESS_RESTRICTION_BY_CONDITION]]></Code>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[accessRestrictionCondition]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[node.agents().size() >= 60 || (agent.group != null && !IsGroupServed(agent.group))]]></Code>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[capacity]]></Name>
 								<Value Class="CodeValue">
-									<Code><![CDATA[30]]></Code>
+									<Code><![CDATA[60]]></Code>
 								</Value>
 							</Parameter>
 							<Parameter>
@@ -13008,6 +13478,171 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 						<Point><X>70</X><Y>0</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
+				<RectangleNode>
+					<Id>1768488973365</Id>
+					<Name><![CDATA[asmZone]]></Name>
+					<X>-150</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<EmbeddedObject>
+						<Id>1768488973364</Id>
+						<ActiveObjectClass>
+							<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+							<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+								<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+								<ItemName><![CDATA[1574694148121]]></ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters>
+							<Parameter>
+								<Name><![CDATA[appliedClass]]></Name>
+								<Value Class="EntityCodeValue">
+									<IsAgentEntity>false</IsAgentEntity>
+									<EntityEmbeddedObject>
+										<Id>1768488987711</Id>
+										<ActiveObjectClass>
+											<PackageName><![CDATA[foodcourt]]></PackageName>
+											<ClassName><![CDATA[Consumer]]></ClassName>
+										</ActiveObjectClass>
+										<GenericParameterSubstitute>
+											<GenericParameterSubstituteReference>
+												<PackageName><![CDATA[foodcourt]]></PackageName>
+												<ClassName><![CDATA[Consumer]]></ClassName>
+												<ItemName><![CDATA[1765358853751]]></ItemName>
+											</GenericParameterSubstituteReference>
+										</GenericParameterSubstitute>
+										<Parameters>
+										</Parameters>
+										<ReplicationFlag>true</ReplicationFlag>
+										<Replication Class="CodeValue">
+											<Code><![CDATA[100]]></Code>
+										</Replication>
+										<CollectionType>ARRAY_LIST_BASED</CollectionType>
+										<InitialLocationType>XYZ</InitialLocationType>
+										<ColumnCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</ColumnCode>
+										<RowCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</RowCode>
+										<LocationNameCode Class="CodeValue">
+											<Code><![CDATA[""]]></Code>
+										</LocationNameCode>
+										<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+										<InitializationDatabaseTableQuery>
+											<Id>1768488987712</Id>
+											<TableReference>
+											</TableReference>
+										</InitializationDatabaseTableQuery>
+										<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+										<QuantityColumn>
+										</QuantityColumn>
+									</EntityEmbeddedObject>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[speedRestricted]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[maxSpeed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestricted]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionType]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionCondition]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[capacity]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[throughput]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[schedule]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[avoidedIfClosed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnter]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnterDenied]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onExit]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onOpen]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onClose]]></Name>
+							</Parameter>
+						</Parameters>
+						<ReplicationFlag>false</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>SPECIFIED_NUMBER</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<Id>1768488973363</Id>
+							<TableReference>
+							</TableReference>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn>
+						</QuantityColumn>
+					</EmbeddedObject>
+					<LineColor>-14774017</LineColor>
+					<FillColor/>
+					<LineWidth>1</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillMaterial>null</FillMaterial>
+					<LineStyle>DASHED</LineStyle>
+					<AttractorsLayout>random</AttractorsLayout>
+					<Sloped>false</Sloped>
+					<Slope>
+						<Id>1768488973367</Id>
+						<Name><![CDATA[asmZone]]></Name>
+						<X>0</X><Y>10</Y>
+						<PublicFlag>false</PublicFlag>
+						<PresentationFlag>true</PresentationFlag>
+						<ShowLabel>true</ShowLabel>
+						<Dx>20</Dx>
+						<Dy>0</Dy>
+						<Dz>0</Dz>
+						<AngleX>30</AngleX>
+						<AngleZ>0</AngleZ>
+						<SlopeType>angle</SlopeType>	
+					</Slope>
+
+					<Width>110</Width>
+					<Height>180</Height>
+					<Rotation>0.0</Rotation>
+				</RectangleNode>
 			</Presentation>
 
 				</Level>
@@ -13602,6 +14237,30 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1768037553509</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1768490634681</Id>
+					<Name><![CDATA[group]]></Name>
+					<X>610</X><Y>570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[PedGroup]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1768490634679</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -14240,9 +14899,53 @@ main.LeavingTotalCount++;]]></EntryAction>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1765359780309" Target="1765359788539" Trigger="timeout">
-						<Action><![CDATA[main.pedWait.free(this);]]></Action>
+						<Action><![CDATA[main.pedWait.free(this);
+
+if (group != null) {
+	
+	for (Agent agent: group.getPeds()) {
+	
+		if (agent != this) {
+			send("IAmFinished", agent);
+			
+		}
+		
+	}
+
+}]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[EatingTime]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Condition><![CDATA[(time() - EatingStart) > EatingTime]]></Condition>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<MessageType><![CDATA[Object]]></MessageType>
+						<DefaultTransition>true</DefaultTransition>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
+					</Properties>	
+				</StatechartElement>
+				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
+					<Id>1768661659217</Id>
+					<Name><![CDATA[transition14]]></Name>
+					<X>300</X><Y>550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>1</X><Y>50</Y></Point>
+					</Points>
+					<IconOffset>20.0</IconOffset>
+					<Properties Source="1765359780309" Target="1765359788539" Trigger="message">
+						<Action><![CDATA[main.pedWait.free(this);]]></Action>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
@@ -14250,10 +14953,10 @@ main.LeavingTotalCount++;]]></EntryAction>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</Rate>
-						<MessageType><![CDATA[Object]]></MessageType>
+						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
-						<FilterType><![CDATA[unconditionally]]></FilterType>
-						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
+						<FilterType><![CDATA[equalsTo]]></FilterType>
+						<EqualsExpression><![CDATA["IAmFinished"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
 					</Properties>	
 				</StatechartElement>
@@ -14615,6 +15318,9 @@ return list.get(randomIndex);]]></Body>
 				</Parameter>
 				<Parameter>
 					<Name><![CDATA[MaxSpeed]]></Name>
+				</Parameter>
+				<Parameter>
+					<Name><![CDATA[group]]></Name>
 				</Parameter>
 			</Parameters>
 			<StartupCode><![CDATA[EatingTime = uniform(20, 40);
@@ -16154,6 +16860,9 @@ main.ReturningAvgTime = main.ReturningTimeStat.mean();]]></ExitAction>
 				<Parameter>
 					<Name><![CDATA[MaxSpeed]]></Name>
 				</Parameter>
+				<Parameter>
+					<Name><![CDATA[group]]></Name>
+				</Parameter>
 			</Parameters>
 			<Generic>false</Generic>
 			<GenericParameter>
@@ -16321,6 +17030,9 @@ main.ReturningAvgTime = main.ReturningTimeStat.mean();]]></ExitAction>
 				</Parameter>
 				<Parameter>
 					<Name><![CDATA[MaxSpeed]]></Name>
+				</Parameter>
+				<Parameter>
+					<Name><![CDATA[group]]></Name>
 				</Parameter>
 			</Parameters>
 			<StartupCode><![CDATA[appearanceType = (int)uniform(5, 7);
