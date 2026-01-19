@@ -926,7 +926,7 @@ posStatisticsMap.put(pedService6.getId(), posStatistics6);]]></StartupCode>
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[2]]></Code>
+							<Code><![CDATA[3]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -4295,7 +4295,7 @@ posStatisticsMap.get(self.getId()).RefuseRate = (double)self.ccl.count() / time(
 						<Parameter>
 							<Name><![CDATA[targetReachTolerance]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[0]]></Code>
+								<Code><![CDATA[0.5]]></Code>
 								<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
 							</Value>
 						</Parameter>
@@ -8295,9 +8295,16 @@ SendToConsumer("GoToPOS", (Consumer)ped);]]></Code>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[speedRestricted]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[true]]></Code>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[maxSpeed]]></Name>
+								<Value Class="CodeUnitValue">
+									<Code><![CDATA[2]]></Code>
+									<Unit Class="SpeedUnits"><![CDATA[KPH]]></Unit>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[accessRestricted]]></Name>
